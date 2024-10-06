@@ -9,7 +9,10 @@
   networking.hostName = "les-chiens";
   networking.domain = "";
   services.openssh.enable = true;
-  users.users.root.openssh.authorizedKeys.keys = [''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICB4/43J0s1YooaIDSVhq0tLKRaEJpQsUZ1ttzCJziuJ dauliac@nixos'' ];
+  users.users.root.openssh.authorizedKeys.keys = [
+    ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICB4/43J0s1YooaIDSVhq0tLKRaEJpQsUZ1ttzCJziuJ dauliac@nixos''
+    ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAI55gPg4K1YzSzJi2kjo6n6V+BtqtJjMku4qujFsKAb aurelien.satger@fake''
+  ];
   system.stateVersion = "23.11";
   nix = {
     settings = {

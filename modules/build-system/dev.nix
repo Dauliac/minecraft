@@ -9,7 +9,6 @@
     pkgs,
     ...
   }: {
-    nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
     devShells.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs;
         [

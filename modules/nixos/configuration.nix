@@ -43,18 +43,19 @@
     openFirewall = true;
     dataDir = "/srv/minecraft";
 
-    # whitelist = {
-    # };
+    whitelist = {
+    };
     serverProperties = {
       motd = "Les chiens";
       online-mode = false;
+      white-list = true;
       max-players = 4;
       difficulty = "normal";
       gamemode = "survival";
       enable-rcon = true;
       "rcon.password" = "longview";
-      view-distance = 20;
-      simulation-distance = 20;
+      view-distance = 30;
+      simulation-distance = 30;
       spawn-protection = 5;
       allow-flight = true;
     };

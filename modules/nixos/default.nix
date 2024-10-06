@@ -1,6 +1,6 @@
 {inputs, ...}: {
   config = {
-    flake.nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
+    flake.nixosConfigurations.les-chiens = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         inputs.nix-minecraft.nixosModules.minecraft-servers

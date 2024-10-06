@@ -31,11 +31,8 @@
   environment.systemPackages = with pkgs; [
     git
     curl
-    overskride
     htop
-    pipewire.jack
-    sbctl
-    jdk21
+    systemctl-tui
   ];
   networking.firewall.enable = true;
 }

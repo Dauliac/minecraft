@@ -34,6 +34,7 @@
     curl
     htop
     systemctl-tui
+    unzip
   ];
   networking.firewall.enable = true;
   services.minecraft-server = {
@@ -54,7 +55,7 @@
       gamemode = "survival";
       # enable-rcon = true;
       # "rcon.password" = "longview";
-      view-distance = 48;
+      view-distance = 64;
       simulation-distance = 32;
       spawn-protection = 5;
       allow-flight = true;

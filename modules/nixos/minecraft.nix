@@ -2,7 +2,7 @@
   services.minecraft-servers.servers.les-chiens = {
     enable = true;
     eula = true;
-    package = pkgs.paperServers.paper-1_20_1;
+    package = pkgs.paperServers.paper-1_21_1;
     autoStart = true;
     openFirewall = true;
 

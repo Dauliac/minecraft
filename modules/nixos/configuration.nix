@@ -46,9 +46,8 @@
     # };
     serverProperties = {
       motd = "Les chiens";
-      server-port = 43000;
       online-mode = false;
-      max-players = 2;
+      max-players = 4;
       difficulty = "normal";
       gamemode = "survival";
       enable-rcon = true;

@@ -1,8 +1,6 @@
 { pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
-    # ./networking.nix # generated at runtime by nixos-infect
-    ./minecraft.nix
   ];
   boot.tmp.cleanOnBoot = true;
   zramSwap.enable = true;

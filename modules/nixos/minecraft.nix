@@ -6,7 +6,6 @@
     autoStart = true;
     openFirewall = true;
 
-
     # whitelist = {
     # };
     serverProperties = {

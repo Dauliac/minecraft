@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
     # ./networking.nix # generated at runtime by nixos-infect
@@ -28,4 +28,13 @@
       options = "-d";
     };
   };
+  environment.systemPackages = with pkgs; [
+    git
+    curl
+    overskride
+    htop
+    pipewire.jack
+    sbctl
+    jdk21
+  ];
 }

@@ -39,7 +39,6 @@
     enable = true;
     eula = true;
     package = pkgs.paperServers.paper-1_20_1;
-    autoStart = true;
     openFirewall = true;
 
     # whitelist = {

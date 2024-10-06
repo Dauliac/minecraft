@@ -35,6 +35,7 @@
     htop
     systemctl-tui
     unzip
+    fd
   ];
   networking.firewall.enable = true;
   services.minecraft-server = {

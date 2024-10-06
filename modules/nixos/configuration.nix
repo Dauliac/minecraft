@@ -36,6 +36,7 @@
     systemctl-tui
     unzip
     fd
+    nvim
   ];
   networking.firewall.enable = true;
   services.minecraft-server = {

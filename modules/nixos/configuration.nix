@@ -40,6 +40,7 @@
     eula = true;
     package = pkgs.paperServers.paper-1_20_1;
     openFirewall = true;
+    dataDir = "/srv/minecraft";
 
     # whitelist = {
     # };

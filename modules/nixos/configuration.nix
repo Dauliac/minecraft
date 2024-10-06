@@ -35,7 +35,7 @@
     systemctl-tui
   ];
   networking.firewall.enable = true;
-  services.minecraft-servers.servers.les-chiens = {
+  services.minecraft-server = {
     enable = true;
     eula = true;
     package = pkgs.paperServers.paper-1_20_1;

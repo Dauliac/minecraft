@@ -37,4 +37,5 @@
     sbctl
     jdk21
   ];
+  networking.firewall.enable = true;
 }

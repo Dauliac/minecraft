@@ -52,10 +52,10 @@
       max-players = 4;
       difficulty = "normal";
       gamemode = "survival";
-      enable-rcon = true;
-      "rcon.password" = "longview";
-      view-distance = 30;
-      simulation-distance = 30;
+      # enable-rcon = true;
+      # "rcon.password" = "longview";
+      view-distance = 48;
+      simulation-distance = 32;
       spawn-protection = 5;
       allow-flight = true;
     };

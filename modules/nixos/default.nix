@@ -7,6 +7,7 @@
         inputs.comin.nixosModules.comin
         ./configuration.nix
         ./hardware-configuration.nix
+        ./comin.nix
         {
           nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
         }

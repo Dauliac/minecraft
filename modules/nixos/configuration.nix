@@ -42,7 +42,7 @@
   services.minecraft-server = {
     enable = true;
     eula = true;
-    package = pkgs.paperServers.paper-1_21_1;
+    package = pkgs.paperServers.paper-1_21_4;
     openFirewall = true;
     dataDir = "/srv/minecraft";
 

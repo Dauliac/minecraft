@@ -51,7 +51,7 @@
       whitelist = {
         Dauliac = "ea017fcd-02a7-4b04-9895-7e11eb58c529";
         aaronky = "69d16278-23bb-491b-b7a3-11c0c17d9a73";
-        walalak = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
+        Walalak = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
       };
       symlinks = {
         mods = pkgs.linkFarmFromDrvs "mods" (builtins.attrValues {

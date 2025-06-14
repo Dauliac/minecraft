@@ -48,7 +48,6 @@
       eula = true;
       package = pkgs.paperServers.paper-1_21_4;
       openFirewall = true;
-      dataDir = "/srv/minecraft";
       whitelist = {
         dauliac = "ea017fcd-02a7-4b04-9895-7e11eb58c529";
         aaronky = "69d16278-23bb-491b-b7a3-11c0c17d9a73";

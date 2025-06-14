@@ -45,10 +45,17 @@
     package = pkgs.paperServers.paper-1_21_4;
     openFirewall = true;
     dataDir = "/srv/minecraft";
-
     whitelist = {
       dauliac = "ea017fcd-02a7-4b04-9895-7e11eb58c529";
       aaronky = "69d16278-23bb-491b-b7a3-11c0c17d9a73";
+    };
+    symlinks = {
+      mods = pkgs.linkFarmFromDrvs "mods" (builtins.attrValues {
+        C2ME = builtins.fetchurl {
+          url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
+          sha512 = "562c87a50f380c6cd7312f90b957f369625b3cf5f948e7bee286cd8075694a7206af4d0c8447879daa7a3bfe217c5092a7847247f0098cb1f5417e41c678f0c1";
+        };
+      });
     };
     serverProperties = {
       motd = "Les chiens";

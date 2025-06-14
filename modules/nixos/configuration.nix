@@ -42,7 +42,6 @@
   services.minecraft-servers = {
     enable = true;
     eula = true;
-    package = pkgs.paperServers.paper-1_21_4;
 
     servers.leschiens = {
       enable = true;

@@ -58,7 +58,7 @@
       };
 
       symlinks = {
-        mods = pkgs.linkFarmFromDrvs "mods" (
+        plugins = pkgs.linkFarmFromDrvs "plugins" (
           builtins.attrValues {
             WorldEdit = pkgs.fetchurl {
               url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";

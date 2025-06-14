@@ -39,7 +39,7 @@
     vim
   ];
   networking.firewall.enable = true;
-  services.minecraft-servers.leschiens = {
+  services.minecraft-servers.servers.leschiens = {
     enable = true;
     eula = true;
     package = pkgs.paperServers.paper-1_21_4;

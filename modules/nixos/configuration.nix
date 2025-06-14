@@ -53,14 +53,18 @@
         aaronky = "69d16278-23bb-491b-b7a3-11c0c17d9a73";
         Walalak = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
       };
+
       symlinks = {
-        mods = pkgs.linkFarmFromDrvs "mods" (builtins.attrValues {
-          worldEdit = pkgs.fetchurl {
-            url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
-            sha512 = "sha512-SOXMA9hcaF1nTwmrsCXWiuUe9ZxzRMAzZRnKlXiJ2jvvgLEaF80S+F/Y9MP5j/7MDijMFprTnG4M4HEztyDQWA==";
-          };
-        });
+        mods = pkgs.linkFarmFromDrvs "mods" (
+          builtins.attrValues {
+            WorldEdit = pkgs.fetchurl {
+              url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
+              sha512 = "sha512-SOXMA9hcaF1nTwmrsCXWiuUe9ZxzRMAzZRnKlXiJ2jvvgLEaF80S+F/Y9MP5j/7MDijMFprTnG4M4HEztyDQWA==";
+            };
+          }
+        );
       };
+
       serverProperties = {
         motd = "Les chiens";
         # online-mode = false;

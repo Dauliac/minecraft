@@ -46,6 +46,7 @@
 
     servers.leschiens = {
       enable = true;
+      autoStart = true;
       package = pkgs.paperServers.paper-1_21_4;
       whitelist = {
         dauliac = "ea017fcd-02a7-4b04-9895-7e11eb58c529";

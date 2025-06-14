@@ -44,7 +44,7 @@
     eula = true;
     package = pkgs.paperServers.paper-1_21_4;
 
-    leschiens = {
+    servers.leschiens = {
       enable = true;
       eula = true;
       package = pkgs.paperServers.paper-1_21_4;

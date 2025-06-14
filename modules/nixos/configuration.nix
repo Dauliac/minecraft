@@ -63,7 +63,7 @@
       };
       serverProperties = {
         motd = "Les chiens";
-        online-mode = false;
+        # online-mode = false;
         white-list = true;
         max-players = 4;
         difficulty = "normal";

@@ -54,7 +54,7 @@
       };
       symlinks = {
         mods = pkgs.linkFarmFromDrvs "mods" (builtins.attrValues {
-          C2ME = builtins.fetchurl {
+          worldEdit = pkgs.fetchurl {
             url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
             sha512 = "562c87a50f380c6cd7312f90b957f369625b3cf5f948e7bee286cd8075694a7206af4d0c8447879daa7a3bfe217c5092a7847247f0098cb1f5417e41c678f0c1";
           };

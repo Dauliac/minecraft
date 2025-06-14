@@ -55,18 +55,52 @@
         Dauliac = "ea017fcd-02a7-4b04-9895-7e11eb58c529";
         aaronky = "69d16278-23bb-491b-b7a3-11c0c17d9a73";
         Walalak = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
+        abitbolide = "d794f148-e9d8-4dfe-90d4-4ed6c5fd38f5";
+        Happinessmanager = "bda029c5-cc14-42c2-9347-cc24ebb4a0bc";
       };
+      symlinks = {
+        "ops.json" = {
+          value = [
+            {
+              uuid = "d794f148-e9d8-4dfe-90d4-4ed6c5fd38f5";
+              name = "abitbolide";
+              level = 4;
+              bypassesPlayerLimit = false;
+            }
+            {
+              uuid = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
+              name = "Walalak";
+              level = 4;
+              bypassesPlayerLimit = false;
+            }
+            {
+              uuid = "bda029c5-cc14-42c2-9347-cc24ebb4a0bc";
+              name = "Happinessmanager";
+              level = 4;
+              bypassesPlayerLimit = false;
+            }
+            {
+              uuid = "69d16278-23bb-491b-b7a3-11c0c17d9a73";
+              name = "aaronkyd";
+              level = 1;
+              bypassesPlayerLimit = false;
+            }
+            {
+              uuid = "ea017fcd-02a7-4b04-9895-7e11eb58c529";
+              name = "Dauliac";
+              level = 4;
+              bypassesPlayerLimit = false;
+            }
+          ];
+        };
 
-      # symlinks = {
-      #   plugins = pkgs.linkFarmFromDrvs "plugins" (
-      #     builtins.attrValues {
-      #       WorldEdit = pkgs.fetchurl {
-      #         url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
-      #         sha512 = "sha512-SOXMA9hcaF1nTwmrsCXWiuUe9ZxzRMAzZRnKlXiJ2jvvgLEaF80S+F/Y9MP5j/7MDijMFprTnG4M4HEztyDQWA==";
-      #       };
-      #     }
-      #   );
-      # };
+        # plugins = pkgs.linkFarmFromDrvs "plugins" (builtins.attrValues {
+        #   worldedit = pkgs.fetchurl {
+        #     url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
+        #     sha512 = "562c87a50f380c6cd7312f90b957f369625b3cf5f948e7bee286cd8075694a7206af4d0c8447879daa7a3bfe217c5092a7847247f0098cb1f5417e41c678f0c1";
+        #   };
+        # });
+      };
 
       serverProperties = {
         motd = "Les chiens";

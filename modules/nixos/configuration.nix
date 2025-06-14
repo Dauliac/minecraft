@@ -57,16 +57,16 @@
         Walalak = "f70899d1-3d0e-4d70-9a68-bf535c196eea";
       };
 
-      symlinks = {
-        plugins = pkgs.linkFarmFromDrvs "plugins" (
-          builtins.attrValues {
-            WorldEdit = pkgs.fetchurl {
-              url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
-              sha512 = "sha512-SOXMA9hcaF1nTwmrsCXWiuUe9ZxzRMAzZRnKlXiJ2jvvgLEaF80S+F/Y9MP5j/7MDijMFprTnG4M4HEztyDQWA==";
-            };
-          }
-        );
-      };
+      # symlinks = {
+      #   plugins = pkgs.linkFarmFromDrvs "plugins" (
+      #     builtins.attrValues {
+      #       WorldEdit = pkgs.fetchurl {
+      #         url = "https://cdn.modrinth.com/data/1u6JkXh5/versions/txgouwkE/worldedit-bukkit-7.3.14.jar";
+      #         sha512 = "sha512-SOXMA9hcaF1nTwmrsCXWiuUe9ZxzRMAzZRnKlXiJ2jvvgLEaF80S+F/Y9MP5j/7MDijMFprTnG4M4HEztyDQWA==";
+      #       };
+      #     }
+      #   );
+      # };
 
       serverProperties = {
         motd = "Les chiens";

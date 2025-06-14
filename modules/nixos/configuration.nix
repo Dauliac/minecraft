@@ -44,6 +44,9 @@
     eula = true;
     openFirewall = true;
 
+    # DOCS: https://github.com/Infinidoge/nix-minecraft/issues/119
+    managementSystem.systemd-socket.enable = true;
+
     servers.leschiens = {
       enable = true;
       autoStart = true;
